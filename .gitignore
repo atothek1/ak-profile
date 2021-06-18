@@ -1,2 +1,5 @@
 /.idea
+/coverage/
+/dist/
+/temp/
 /node_modules/
