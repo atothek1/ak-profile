@@ -9,7 +9,7 @@
     "ecmaFeatures": {
       "jsx": true
     },
-    "extraFileExtensions":[ ".spec.ts", ".spec.tsx", ".d.ts" ]
+    "extraFileExtensions":[ ".mock.js", ".spec.ts", ".spec.tsx", ".d.ts" ]
   },
   "extends": [
     "plugin:@typescript-eslint/eslint-recommended",
