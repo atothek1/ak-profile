@@ -5,7 +5,7 @@
   "author": {
     "name": "Alexander Kämmerer"
   },
-  "main": "src/index.ts",
+  "main": "src/index.tsx",
   "config": {
     "app": {
       "name": "ak-profile",
@@ -13,8 +13,8 @@
     }
   },
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack-cli --color --config config/webpack.js",
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.js",
+    "build": "cross-env NODE_ENV=production webpack-cli --color --config ./config/webpack.js",
+    "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.js",
     "test": "cross-env NODE_ENV=production jest --config ./config/jest.config.js --ci --passWithNoTests",
     "lint": "eslint ./ --config .eslintrc",
     "type": "tsc --noEmit",
@@ -47,6 +47,7 @@
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "cross-env": "^7.0.3",
     "eslint": "^7.28.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.24.0",

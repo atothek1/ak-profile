@@ -1,8 +1,12 @@
 pre-commit:
-  parallel: true
+  parallel: false
   commands:
-    ci:
-      run: yarn ci
+    lint:
+      run: yarn lint
+    type:
+      run: yarn type
+    test:
+      run: yarn test
 # EXAMPLE USAGE
 # Refer for explanation to following link:
 # https://github.com/evilmartians/lefthook/blob/master/docs/full_guide.md
