@@ -38,6 +38,7 @@ module.exports = async () => {
             "@utils/(.*)": "<rootDir>/src/utils/$1",
             "@store/(.*)": "<rootDir>/src/store/$1",
             "@res/(.*)": "<rootDir>/res/$1",
+            "@type/(.*)": "<rootDir>/src/types/$1",
             "@mocks/(.*)": "<rootDir>/__mocks__/$1",
         },
         globals: {

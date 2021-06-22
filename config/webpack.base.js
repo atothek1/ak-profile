@@ -39,6 +39,7 @@ module.exports = ( rootPath, packagePath ) => {
                 "@store": `${ packagePath }/src/store`,
                 "@utils": `${ packagePath }/src/utils`,
                 "@res": `${ packagePath }/res`,
+                "@type": `${ packagePath }/src/types`,
             },
         },
         module: {
