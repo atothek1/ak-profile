@@ -1,3 +1,6 @@
+// eslint-disable-next-line @typescript-eslint/triple-slash-reference
+///<reference path="./src/types/styled.d" />
+
 // eslint-disable-next-line no-underscore-dangle,@typescript-eslint/naming-convention
 declare const __NAME__: string;
 // eslint-disable-next-line no-underscore-dangle,@typescript-eslint/naming-convention
@@ -21,11 +24,11 @@ declare interface KeyValuePair<T = unknown> {
 }
 
 declare interface Dictionary<T = unknown> {
-    readonly [ key: string ]: T;
+    readonly [ key: string ]: Readonly<T>;
 }
 
 declare interface MutableDictionary<T = unknown> {
-    [ key: string ]: Readonly<T>;
+    [ key: string ]: T;
 }
 
 declare interface TestIdProps {

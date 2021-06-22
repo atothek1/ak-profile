@@ -13,6 +13,8 @@
     }
   },
   "scripts": {
+    "prefull": "yarn type && yarn lint && yarn test",
+    "full": "yarn build",
     "build": "cross-env NODE_ENV=production webpack-cli --color --config ./config/webpack.js",
     "start": "cross-env NODE_ENV=development webpack serve --config ./config/webpack.js",
     "test": "cross-env NODE_ENV=production jest --config ./config/jest.config.js --ci --passWithNoTests",
@@ -32,11 +34,13 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/react-hooks": "^7.0.0",
     "@testing-library/user-event": "^13.1.9",
+    "@types/lodash-es": "^4.17.4",
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "@types/react-router": "^5.1.15",
     "@types/react-router-dom": "^5.1.7",
+    "@types/react-router-hash-link": "^2.4.0",
     "@types/styled-components": "^5.1.10",
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
@@ -65,11 +69,14 @@
   },
   "dependencies": {
     "core-js": "^3.14.0",
+    "lodash-es": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
+    "react-router-hash-link": "^2.4.3",
     "styled-components": "^5.3.0",
+    "styled-media-query": "^2.1.2",
     "styled-normalize": "^8.0.7"
   }
 }

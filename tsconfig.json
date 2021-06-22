@@ -26,6 +26,9 @@
       "@res/*": [
         "res/*"
       ],
+      "@type/*": [
+        "src/types/*"
+      ],
       "@mocks/*": [
         "src/__mocks__/*"
       ],
