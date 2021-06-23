@@ -26,7 +26,7 @@ const typo: Typo = {
     fontSize: "1.6rem",
     fontWeight: "400",
     fontWeightBold: "700",
-    lineHeight: "1.5",
+    lineHeight: "1.15",
 };
 
 const sizes: Sizes = {
@@ -42,8 +42,12 @@ const sizes: Sizes = {
 const spacings: Spacings = {
     margin1x: `${ minUnit / 10 }rem`,
     margin2x: `${ minUnit * 2 / 10 }rem`,
+    margin4x: `${ minUnit * 4 / 10 }rem`,
+    margin8x: `${ minUnit * 8 / 10 }rem`,
     padding1x: `${ minUnit / 10 }rem`,
     padding2x: `${ minUnit * 2 / 10 }rem`,
+    padding4x: `${ minUnit * 4 / 10 }rem`,
+    padding8x: `${ minUnit * 8 / 10 }rem`,
 };
 
 const layers: Layers = {

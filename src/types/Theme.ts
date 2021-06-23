@@ -60,8 +60,12 @@ export interface Layers {
 export interface Spacings {
     readonly margin1x: string;
     readonly margin2x: string;
+    readonly margin4x: string;
+    readonly margin8x: string;
     readonly padding1x: string;
     readonly padding2x: string;
+    readonly padding4x: string;
+    readonly padding8x: string;
 }
 
 export interface Theme {
