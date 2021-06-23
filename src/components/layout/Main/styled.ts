@@ -1,7 +1,7 @@
+import { media } from "@utils/styled";
 import styled from "styled-components";
 import { Box } from "../Box";
 import { StyledMainProps } from "./types";
-import { media } from "@utils/styled";
 
 export const StyledMain = styled( Box )<StyledMainProps>`
     ${ props => ( props.order !== undefined ? `order: ${ props.order };` : "" ) }

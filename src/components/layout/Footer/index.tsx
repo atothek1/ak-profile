@@ -5,13 +5,13 @@ import { FooterProps } from "./types";
 export function Footer( props: FooterProps ): JSX.Element {
     const {
         children,
-        order
+        ...rest
     } = props;
 
     return (
         <StyledFooter
             forwardedAs="footer"
-            order={ order }
+            { ...rest }
         >
             { children }
         </StyledFooter>

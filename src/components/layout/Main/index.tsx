@@ -5,14 +5,15 @@ import { MainProps } from "./types";
 export function Main( props: MainProps ): JSX.Element {
     const {
         children,
-        order
+        column = true,
+        ...rest
     } = props;
 
     return (
         <StyledMain
             forwardedAs="main"
-            column
-            order={ order }
+            column={ column }
+            { ...rest }
         >
             { children }
         </StyledMain>

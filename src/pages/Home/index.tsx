@@ -1,3 +1,4 @@
+import { Heading } from "@components/common";
 import { Routes } from "@components/core/Routes";
 import { Page } from "@components/layout/Page";
 import { PageProps, RouteConfig } from "@type/Routing";
@@ -10,8 +11,8 @@ export function Home( props: HomeProps ): JSX.Element {
     const { id, routes } = props;
     return (
         <>
-            <Page id={ id } as="section" height="800px">
-                Hello Home Page
+            <Page id={ id } height="800px">
+                <Heading as="h2" isSticky>Hello Home Page</Heading>
             </Page>
             <Routes routes={ routes } />
         </>

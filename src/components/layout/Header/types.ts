@@ -1,6 +1,6 @@
 import { BoxProps } from "../Box/types";
 
-export interface HeaderProps extends Readonly<Pick<BoxProps, "children">> {
+export interface HeaderProps extends Readonly<Omit<BoxProps, "as" | "column">> {
     readonly order: number;
 }
 

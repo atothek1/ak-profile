@@ -7,10 +7,10 @@ const scrollThreshold = 80;
 export function Header( props: HeaderProps ): JSX.Element {
     const {
         children,
-        order,
+        ...rest
     } = props;
 
-    const scroll = useScroll( 50 );
+    const scroll = useScroll( 30 );
     const [ shouldShrink, setShouldShrink ] = useState( false );
 
     useEffect( () => {
@@ -23,8 +23,8 @@ export function Header( props: HeaderProps ): JSX.Element {
     return (
         <StyledHeader
             forwardedAs="header"
-            order={ order }
             shouldShrink={ shouldShrink }
+            { ...rest }
         >
             { children }
         </StyledHeader>
